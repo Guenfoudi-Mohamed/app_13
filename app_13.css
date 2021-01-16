@@ -5,8 +5,9 @@ body{font-family: 'sans-serif',Arial, Helvetica, sans-serif;}
 body > input[id="check"]{display: none;}
 body > input[id="check"]:checked ~ header{position: sticky;background-color:rgb(255, 255, 255,.1);backdrop-filter: blur(8px);}
 body > input[id="check"]:checked ~ header .navbar .logo{visibility: hidden;}
+body > input[id="check"]:checked ~ header .navbar .content_right{max-height: 0px;}
 body > input[id="check"]:checked ~ header .navbar .content_right input[type="button"]{visibility: hidden;}
-body > input[id="check"]:checked ~ header .navbar .content_right a{visibility: hidden;max-height: 0px;overflow: hidden;}
+body > input[id="check"]:checked ~ header .navbar .content_right a{visibility: hidden;}
 body > input[id="check"]:checked ~ .pop_up_list{display: flex;}
 /*=== end body > input ===*/
 /*=== Start Header ===*/
