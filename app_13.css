@@ -1,6 +1,6 @@
 *{margin: 0px;padding: 0px;box-sizing: border-box;outline: none;text-decoration: none;list-style: none;}
 /*=== Start Body ===*/
-body{font-family: 'sans-serif',Arial, Helvetica, sans-serif;max-width: 1440px;display: flex;justify-content:center;align-items: center;flex-direction: column;position: absolute;top: 0px;bottom: 0px;left: 0px;right: 0px;margin: auto;}
+body{font-family: 'sans-serif',Arial, Helvetica, sans-serif;max-width: 1440px;max-height: 900px; display: flex;justify-content:space-between;align-items: center;flex-direction: column;position: absolute;top: 0px;bottom: 0px;left: 0px;right: 0px;margin: auto;}
 /*=== start body > input ===*/
 body > input[id="check"]{display: none;}
 body > input[id="check"]:checked ~ header{position: sticky;background-color: rgb(255, 255, 255,.1);}
@@ -29,7 +29,7 @@ body header .navbar .content_right .humbrger .bar{width: 100%;height: 3px;backgr
 body header .navbar .content_right .humbrger:hover .bar{outline: 1px solid #000;}
     /* start media query => header */
 @media (min-width:280px) and (max-width:1219px){
-    body{display: initial;}
+    body{display: initial;max-height: initial;}
     body header{background-color:rgba(0, 0, 0, 0.192);}
     body header .navbar .logo h1{-webkit-text-stroke: 1.5px #000;color: #fff;}
     body header .navbar .content_right .humbrger .bar{outline: 1px solid #000;}
@@ -63,7 +63,7 @@ main article .section_1 .box_background > img{max-width: 500px;position: absolut
 main article .section_1 .box_background .box{position: absolute;bottom: 75px;padding: 17px;left: 161px;background-color: rgba(255, 255, 255, 0.3);backdrop-filter: blur(8px);}
 main article .section_1 .box_background .box h1{font-size: 80px;color: rgba(255,255,255,.9);}
 @media (min-width:280px) and (max-width:1219px){
-    main article{width: 95%;margin: 0px auto;min-height: calc(100vh - 97px);}
+    main article{width: 95%;margin: 0px auto;min-height: 100vh;}
     main article .section_1{width: 350px;min-height: 575px;}
     main article .section_1 .box_background{border-radius: 30% ;width: 90%;bottom: 60px;left: 50%;transform: translateX(-50%);}
     main article .section_1 .box_background > img{max-width: 355px;}
