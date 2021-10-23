@@ -1,6 +1,6 @@
 *{margin: 0px;padding: 0px;box-sizing: border-box;outline: none;text-decoration: none;list-style: none;}
 /*=== Start Body ===*/
-body{font-family: 'sans-serif',Arial, Helvetica, sans-serif;max-width: 1440px;max-height: 900px; display: flex;justify-content:space-between;align-items: center;flex-direction: column;position: absolute;top: 0px;bottom: 0px;left: 0px;right: 0px;margin: auto;}
+body{font-family: 'sans-serif',Arial, Helvetica, sans-serif;max-width: 1440px;max-height: 913px; display: flex;justify-content:space-between;align-items: center;flex-direction: column;position: absolute;top: 0px;bottom: 0px;left: 0px;right: 0px;margin: auto;}
 /*=== start body > input ===*/
 body > input[id="check"]{display: none;}
 body > input[id="check"]:checked ~ header{position: sticky;background-color: rgb(255, 255, 255,.1);}
