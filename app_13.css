@@ -1,6 +1,6 @@
 *{margin: 0px;padding: 0px;box-sizing: border-box;outline: none;text-decoration: none;list-style: none;}
 /*=== Start Body ===*/
-body{font-family: 'sans-serif',Arial, Helvetica, sans-serif;max-width: 1440px;margin:auto;min-height: 100vh;}
+body{font-family: 'sans-serif',Arial, Helvetica, sans-serif;max-width: 1440px;display: flex;justify-content:center;align-items: center;flex-direction: column;position: absolute;top: 0px;bottom: 0px;left: 0px;right: 0px;margin: auto;}
 /*=== start body > input ===*/
 body > input[id="check"]{display: none;}
 body > input[id="check"]:checked ~ header{position: sticky;background-color: rgb(255, 255, 255,.1);}
@@ -10,7 +10,7 @@ body > input[id="check"]:checked ~ header .navbar .content_right a{visibility: h
 body > input[id="check"]:checked ~ .pop_up_list{display: flex;z-index: 4;}
 /*=== end body > input ===*/
 /*=== Start Header ===*/
-body header{width: 100%;padding: 29px 0px;position: sticky;top: 0px;z-index: 5;}
+body header{width: 100%;padding: 24px 0px;position: sticky;top: 0px;z-index: 5;}
     /* start .navbar */
 body header .navbar{width: 85%;margin:0px auto;display: flex;justify-content: space-between;align-items: center;position: relative;}
 body header .navbar .logo{cursor: context-menu;}
@@ -23,12 +23,13 @@ body header .navbar .content_right input[type="button"]:hover{background-color:#
 body header .navbar .content_right a{display: inline-flex;margin: 0px 40px;cursor: pointer;color: #000;}
 body header .navbar .content_right a svg{width: 18px;}
 body header .navbar .content_right a:hover svg{color:#f97d7d;}
-            /* satrt humbrger */
+            /* start humbrger */
 body header .navbar .content_right .humbrger{width: 30px;height: 21px;display: flex;flex-direction: column;justify-content: space-between;cursor: pointer;z-index: 4;}
 body header .navbar .content_right .humbrger .bar{width: 100%;height: 3px;background-color:#f97d7d;border-radius: 5px;}
 body header .navbar .content_right .humbrger:hover .bar{outline: 1px solid #000;}
     /* start media query => header */
-@media (min-width:280px) and (max-width:1300px){
+@media (min-width:280px) and (max-width:1219px){
+    body{display: initial;}
     body header{background-color:rgba(0, 0, 0, 0.192);}
     body header .navbar .logo h1{-webkit-text-stroke: 1.5px #000;color: #fff;}
     body header .navbar .content_right .humbrger .bar{outline: 1px solid #000;}
@@ -42,20 +43,21 @@ body header .navbar .content_right .humbrger:hover .bar{outline: 1px solid #000;
 }
 /*=== end header ===*/
 /*=== start pop_up_list ===*/
-body .pop_up_list{width: 100%;height: 100vh;background-color: rgb(255, 255, 255,.2);backdrop-filter: blur(10px);position: fixed;left:0px;top:0px; top:  0px;display: none;justify-content: center;align-items: center;}
+body .pop_up_list{width: 100%;height: 100vh;background-color: rgb(255, 255, 255,.1);backdrop-filter: blur(10px);position: fixed;left:0px;top:0px; top:  0px;display: none;justify-content: center;align-items: center;}
 body .pop_up_list .nav li a{text-align: center;color: #000;-webkit-text-stroke: 1px white;font-size: 55px;display: block;line-height: 65px;font-weight: bolder;margin: 10px 0px;}
 body .pop_up_list .nav li a:hover{color: #f97d7d;-webkit-text-stroke: 1.5px #000;}
 /*=== end list_humbrger ===*/
-/*=== Start Main ===*/
+/*=== start Main ===*/
 main{width: 100%;position: relative;}
     /* start article */
 main article{margin: 0px auto;display: flex;justify-content:space-between;flex-wrap: wrap;position: relative;}
     /* start mediaq query ==> article */
 @media (min-width:280px) and (max-width:1219px){
+    /* main article{top: 86.5px;}  */
     main article{margin: 0px auto;display: flex;justify-content:center;}
 }
         /* start section_1*/
-main article .section_1,.section_2{position: relative;width: 650px;min-height:calc(100vh - 97px);}
+main article .section_1,.section_2{position: relative;width: 650px;min-height:687px;}
 main article .section_1 .box_background{width: 100%;height:50%;background-color:#f97d7d;position:absolute;border: 2px solid #000;border-bottom: none;border-left: none; bottom: 0px; border-radius: 0px 30% 0px 0px;}
 main article .section_1 .box_background > img{max-width: 500px;position: absolute;left: 50%;bottom: 10em;transform: rotate(90deg)translate(-50%,0%);transform-origin: left;}
 main article .section_1 .box_background .box{position: absolute;bottom: 75px;padding: 17px;left: 161px;background-color: rgba(255, 255, 255, 0.3);backdrop-filter: blur(8px);}
@@ -92,7 +94,7 @@ main article .section_2 .content_bottom .icon a:hover{background-color:#f97d7d;b
     main article .section_2 .content_bottom{margin:0px;position: static;top: 35px;margin-top: 45px;}
 }
         /* staert section_3 */
-main article .section_3{width:100px;min-height:100%; border: 2px solid black;background-color:#f97d7d;border-radius:80px 0px 0px 80px;display: flex;justify-content: center;align-items: center;} 
+main article .section_3{width:100px;min-height:687px; border: 1px solid black;background-color:#f97d7d;border-radius:80px 0px 0px 80px;display: flex;justify-content: center;align-items: center;} 
             /* start content */
                 /* start line */
 main article .section_3 .content .line{width: 2px;height: 250px;background-color: #fff;border-radius: 5px;margin: auto;}
